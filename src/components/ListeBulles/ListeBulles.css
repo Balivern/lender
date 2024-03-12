@@ -1,0 +1,12 @@
+/* ListeBulles.css */
+.liste-bulles {
+    display: flex;
+    overflow-x: auto;
+    /* Autres styles pour la liste */
+}
+   
+.menu-deroulant {
+    display: flex;
+    flex-direction: column;
+    /* Styles pour le menu déroulant */
+}

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './components/Header/Header.js';
+import ListeBulles from './components/ListeBulles/ListeBulles.js';
+
+const bulles = [
+  { titre: 'Services', contenu: 'Contenu de la bulle 1' },
+  { titre: 'Véhicules', contenu: 'Contenu de la bulle 2' },
+  { titre: 'Outils', contenu: 'Contenu de la bulle 2' },
+  { titre: 'Loisirs', contenu: 'Contenu de la bulle 2' },
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      {
+      <div className="ListeBulles">
+        <ListeBulles bulles={bulles}/>
+      </div>
+      }
     </div>
   );
 }
