@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  width: 100%;
+  text-align: left;
+  img {
+    align-self: flex-start;
+  }
+}
+
+#userCard {
+  img {
+    width: auto;
+    height: 8em;
+  }
+}
