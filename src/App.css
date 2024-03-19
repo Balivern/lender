@@ -38,10 +38,19 @@
 }
 
 .header {
-  width: 100%;
-  text-align: left;
+  align-items: center;
   img {
-    align-self: flex-start;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+}
+
+#SearchBarCol {
+  text-align: center;
+  input {
+    width: 90%;
+    height: auto;
   }
 }
 

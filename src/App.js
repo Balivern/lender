@@ -1,11 +1,13 @@
 import "./App.css";
+import Container from "react-bootstrap/Container";
 import Header from "./Components/lenderHeader";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <Header />
-    </div>
+    </Container>
   );
 }
 
