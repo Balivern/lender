@@ -1,16 +1,20 @@
 .bulle {
-    /* Styles de base pour la bulle */
     cursor: pointer;
     margin-right: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-   }
-   
-   .contenu-bulle {
-    /* Styles pour le contenu de la bulle */
+    transition: all 0.4s ease; /* Ajoutez une transition pour les changements de style */
+}
+
+.bulle.open {
+    height: auto; /* Permet à la bulle de s'agrandir verticalement */
+}
+
+.contenu-bulle {
     margin-top: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-   }
+    color: white;
+}
