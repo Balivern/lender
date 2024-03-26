@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 import './Header.css';
+import ProfilCard from '../ProfilCard/ProfilCard';
+
+const profilcard = [
+  { nom: 'Nom de l\'utilisateur'},
+  { prets: 'Mes prêts'},
+  { gestion: 'Gestion du profil'},
+  { deco: 'Déconnexion'},
+];
 
 const Header = () => {
     const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -11,20 +19,8 @@ const Header = () => {
     return (
        <header className="header">
          <div className="header-content">
-           <div>Contenu du header</div>
-         </div>
-         <div className="profile-card" onClick={toggleDropdown}>
-           <img src='img/profil-lender.jpg' alt="Profil" className="profile-image" />
-           {isDropdownVisible && (
-             <div className="dropdown-menu">
-               <ul>
-                 <li className="menu" onClick={toggleDropdown}>Nom de l'utilisateur</li>
-                 <li className="menu" onClick={toggleDropdown}>Mes prêts</li>
-                 <li className="menu" onClick={toggleDropdown}>Gestion du profil</li>
-                 <li className="menu" onClick={toggleDropdown}>Déconnexion</li>
-               </ul>
-             </div>
-           )}
+           <div>Bienvenue sur Lender</div>
+           <ProfilCard profilcard={profilcard} isDropdownVisible={isDropdownVisible} toggleDropdown={toggleDropdown} />
          </div>
        </header>
     );

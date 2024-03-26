@@ -1,0 +1,31 @@
+.profil-card {
+    position: absolute;
+    right:0;
+    cursor: pointer;
+    margin-left: auto;
+    float: right;
+}
+
+.profil-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Assurez-vous que cette valeur est inférieure à celle de l'image */
+}
+
+.dropdown-menu ul li {
+    white-space: nowrap;
+    /* Autres styles */
+}

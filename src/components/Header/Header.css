@@ -1,35 +1,25 @@
 .header {
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    align-items: center;
+    align-items: center; /* Pour centrer verticalement les éléments si nécessaire */
     padding: 20px;
     background-color: #f8f9fa;
-   }
+}
 
-   .header-content {
-    margin: 0;
-   }
-   
-   .profile-card {
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Pour centrer verticalement les éléments si nécessaire */
+}
+
+.profil-card {
     position: relative;
     cursor: pointer;
-   }
-   
-   .profile-image {
+    margin-left: auto;
+}
+
+.profil-image {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-   }
-   
-   .dropdown-menu {
-    position: absolute;
-    right: 0;
-    top: 100%;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   }
-   
+}
