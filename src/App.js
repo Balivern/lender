@@ -1,6 +1,10 @@
+import "./App.css";
+import Container from "react-bootstrap/Container";
+import Header from "./components/lenderHeader";
+import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import React from 'react';
-import Header from './components/Header/Header.js';
+//import Header from './components/Header/Header.js';
 import ListeBulles from './components/ListeBulles/ListeBulles.js';
 
 const bulles = [
@@ -12,14 +16,14 @@ const bulles = [
 
 function App() {
   return (
-    <div className="App">
+    <Container>
       <Header/>
       {
       <div className="ListeBulles">
         <ListeBulles bulles={bulles}/>
       </div>
       }
-    </div>
+    </Container>
   );
 }
 
