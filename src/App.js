@@ -4,8 +4,10 @@ import Header from "./components/lenderHeader";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
 import React from 'react';
+import Map from "./components/Map/map.js";
 //import Header from './components/Header/Header.js';
 import ListeBulles from './components/ListeBulles/ListeBulles.js';
+import { Row } from "react-bootstrap";
 
 const bulles = [
   { titre: 'Services', contenu: 'Contenu de la bulle 1' },
@@ -18,11 +20,14 @@ function App() {
   return (
     <Container>
       <Header/>
-      {
-      <div className="ListeBulles">
-        <ListeBulles bulles={bulles}/>
+      <Row>
+        <div className="ListeBulles">
+          <ListeBulles bulles={bulles}/>
+        </div>
+      </Row>
+      <div id="content">
+        <Map/>
       </div>
-      }
     </Container>
   );
 }

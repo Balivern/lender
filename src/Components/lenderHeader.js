@@ -16,7 +16,10 @@ export default function Header() {
         <SearchBar />
       </Col>
       <Col xs="3" md="3" lg="3">
-        <UserCard />
+        <UserCard 
+          username="Jean Michel"
+          imageUrl={process.env.PUBLIC_URL + "images/blank_profile.png"}
+        />
       </Col>
     </Row>
   );
