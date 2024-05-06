@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Header from "./components/lenderHeader";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Map from "./components/Map/map.js";
 //import Header from './components/Header/Header.js';
